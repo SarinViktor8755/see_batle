@@ -42,62 +42,75 @@ public class Field {
         int iteration = 0;
         clear_field();
 
-        while (Field.size < 4){
+        while (Field.size < 4) {
             create_random_ship(1);
             iteration++;
-            if(iteration > 350) {clear_field(); auto_ras();}
+            if (iteration > 350) {
+                clear_field();
+                auto_ras();
+            }
         }
         Field.size = 0;
 
-        while (Field.size < 3){
+        while (Field.size < 3) {
             create_random_ship(2);
             iteration++;
-            if(iteration > 350) {clear_field(); auto_ras();}
+            if (iteration > 350) {
+                clear_field();
+                auto_ras();
+            }
         }
         Field.size = 0;
 
-        while (Field.size < 2){
+        while (Field.size < 2) {
             create_random_ship(3);
             iteration++;
-            if(iteration > 350) {clear_field(); auto_ras();}
+            if (iteration > 350) {
+                clear_field();
+                auto_ras();
+            }
         }
         Field.size = 0;
 
-        while (Field.size < 1){
+        while (Field.size < 1) {
             create_random_ship(4);
             iteration++;
-            if(iteration > 350) {clear_field(); auto_ras();}
+            if (iteration > 350) {
+                clear_field();
+                auto_ras();
+            }
         }
-      //  System.out.println("iteration"+iteration);
+        //  System.out.println("iteration"+iteration);
 
     }
-
 
 
     private void print_playing_field() {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
-                        System.out.print(field_matrix[i][j].tip + " ");
+                System.out.print(field_matrix[i][j].tip + " ");
             }
-                 System.out.println();
+            System.out.println();
         }
-         System.out.println("---------");
+        System.out.println("---------");
     }
 
     public boolean add_ship_on_field(Ship ship) {
         if (!checking_setting_of_the_ship(ship)) return false;
         if (!ship.orientation_horizontal) {
             for (int i = ship.x; i < ship.x + ship.size; i++) {
-              //     System.out.println(i + "  " + ship.y);
+                //     System.out.println(i + "  " + ship.y);
                 field_matrix[i][ship.y].tip = CELL_TYPE.OPEN_DEATH;
 
-            }return true;
+            }
+            return true;
         } else {
             for (int i = ship.y; i < ship.y + ship.size; i++) {
                 field_matrix[ship.x][i].tip = CELL_TYPE.OPEN_DEATH;
-              //     System.out.println(ship.x + "  " + i);
+                //     System.out.println(ship.x + "  " + i);
 
-            }return true;
+            }
+            return true;
         }
 
     }
@@ -147,7 +160,7 @@ public class Field {
     }
 
 
-    public void clear_field(){
+    public void clear_field() {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 field_matrix[i][j].setTip(CELL_TYPE.UNOPENED);
@@ -156,58 +169,24 @@ public class Field {
     }
 
 
-    public void auto_completion_the_card(){
+    public void auto_completion_the_card() {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 Cell c = field_matrix[i][j];
-                if(c.getTip() == CELL_TYPE.OPEN_DEATH){
-                    try {
+                if (c.getTip() == CELL_TYPE.OPEN_DEATH) {
 
 
-//                        if(field_matrix[i][j-1].getTip()!= CELL_TYPE.OPEN_DEATH)
-//                        field_matrix[i][j-1].setTip(CELL_TYPE.OPEN_WOUND);
-//                        if(field_matrix[i][j].getTip()!= CELL_TYPE.OPEN_DEATH)
-//                            field_matrix[i][j].setTip(CELL_TYPE.OPEN_WOUND);
-//                        if(field_matrix[i][j+1].getTip()!= CELL_TYPE.OPEN_DEATH)
-//                            field_matrix[i][j+1].setTip(CELL_TYPE.OPEN_WOUND);
-//
-//
-//                        if(field_matrix[i-1][j].getTip()!= CELL_TYPE.OPEN_DEATH)
-//                            field_matrix[i-1][j].setTip(CELL_TYPE.OPEN_WOUND);
-//                        if(field_matrix[i][j].getTip()!= CELL_TYPE.OPEN_DEATH)
-//                            field_matrix[i][j].setTip(CELL_TYPE.OPEN_WOUND);
-//                        if(field_matrix[i+1][j].getTip()!= CELL_TYPE.OPEN_DEATH)
-//                            field_matrix[i+1][j].setTip(CELL_TYPE.OPEN_WOUND);
-//
-//
-//                        if(field_matrix[i-1][j-1].getTip()!= CELL_TYPE.OPEN_DEATH)
-//                            field_matrix[i-1][j-1].setTip(CELL_TYPE.OPEN_WOUND);
-//
-//
-//                        if(field_matrix[i+1][j+1].getTip()!= CELL_TYPE.OPEN_DEATH)
-//                            field_matrix[i+1][j+1].setTip(CELL_TYPE.OPEN_WOUND);
-//
-//
-//                        if(field_matrix[i-1][j+1].getTip()!= CELL_TYPE.OPEN_DEATH)
-//                            field_matrix[i-1][j+1].setTip(CELL_TYPE.OPEN_WOUND);
-//
-//
-//                        if(field_matrix[i+1][j-1].getTip()!= CELL_TYPE.OPEN_DEATH)
-//                            field_matrix[i+1][j-1].setTip(CELL_TYPE.OPEN_WOUND);
-//
-
-                        for (int k = -1; k <= 1 ; k++) {
-                            for (int l = -1; l <= 1 ; l++) {
-                                if(field_matrix[i+k][j+l].getTip()!= CELL_TYPE.OPEN_DEATH)
-                                    field_matrix[i+k][j+l].setTip(CELL_TYPE.OPEN_WOUND);
+                    for (int k = -1; k <= 1; k++) {
+                        for (int l = -1; l <= 1; l++) {
+                            try {
+                                if (field_matrix[i + k][j + l].getTip() != CELL_TYPE.OPEN_DEATH)
+                                    field_matrix[i + k][j + l].setTip(CELL_TYPE.OPEN_WOUND);
+                            } catch (ArrayIndexOutOfBoundsException e) {
+                                continue;
                             }
-
                         }
 
-                    }catch (ArrayIndexOutOfBoundsException e){
-                        continue;
                     }
-
 
 
                 }

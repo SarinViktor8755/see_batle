@@ -31,6 +31,7 @@ public class MainGame extends ApplicationAdapter {
 
     @Override
     public void render() {
+        game_match.player_playin_field.auto_completion_the_card();
         ScreenUtils.clear(.5f, .5f, .5f, 1);
         batch.begin();
 
@@ -68,7 +69,7 @@ public class MainGame extends ApplicationAdapter {
 
         batch.end();
 
-        game_match.player_playin_field.auto_completion_the_card();
+
 
         if (MathUtils.randomBoolean(.05f))
             if (MathUtils.randomBoolean())
