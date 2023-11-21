@@ -50,36 +50,36 @@ public class Field {
                 auto_ras();
             }
         }
-//        Field.size = 0;
-//
-//        while (Field.size < 3) {
-//            create_random_ship(2);
-//            iteration++;
-//            if (iteration > 350) {
-//                clear_field();
-//                auto_ras();
-//            }
-//        }
-//        Field.size = 0;
-//
-//        while (Field.size < 2) {
-//            create_random_ship(3);
-//            iteration++;
-//            if (iteration > 350) {
-//                clear_field();
-//                auto_ras();
-//            }
-//        }
-//        Field.size = 0;
-//
-//        while (Field.size < 1) {
-//            create_random_ship(4);
-//            iteration++;
-//            if (iteration > 350) {
-//                clear_field();
-//                auto_ras();
-//            }
-//        }
+        Field.size = 0;
+
+        while (Field.size < 3) {
+            create_random_ship(2);
+            iteration++;
+            if (iteration > 350) {
+                clear_field();
+                auto_ras();
+            }
+        }
+        Field.size = 0;
+
+        while (Field.size < 2) {
+            create_random_ship(3);
+            iteration++;
+            if (iteration > 350) {
+                clear_field();
+                auto_ras();
+            }
+        }
+        Field.size = 0;
+
+        while (Field.size < 1) {
+            create_random_ship(4);
+            iteration++;
+            if (iteration > 350) {
+                clear_field();
+                auto_ras();
+            }
+        }
 //        //  System.out.println("iteration"+iteration);
 
     }

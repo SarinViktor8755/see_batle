@@ -2,6 +2,7 @@ package com.sea.battle.lite;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -34,23 +35,25 @@ public class MainGame extends ApplicationAdapter {
         game_match.player_playin_field.auto_completion_the_card();
         ScreenUtils.clear(.5f, .5f, .5f, 1);
         batch.begin();
-
+        batch.setColor(1,1,1,1);
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 Cell cell = game_match.player_playin_field.getCellmatrix(i, j);
-
                 if (cell.getTip() == CELL_TYPE.UNOPENED) batch.setColor(0, 1, 1, 1);
-                if (cell.getTip() == CELL_TYPE.OPEN_DEATH) batch.setColor(1, 0, 1, 1);
-                batch.draw(texture, 50 + (j * 22), 300 - (i * 22), 20, 20);
+                if (cell.getTip() == CELL_TYPE.UNOPENED_EMPTY) batch.setColor(0, 1, 1, 1);
+                if (cell.getTip() == CELL_TYPE.UNOPENED_OCCUPIED) batch.setColor(0, 1, 1, 1);
 
-                if (cell.getTip() == CELL_TYPE.OPEN_WOUND) {
-                    batch.setColor(1, 1, 1, 1);
-                    batch.draw(textureb, 50 + (j * 22), 300 - (i * 22), 20, 20);
+                /////////////////
 
-                }
+                if (cell.getTip() == CELL_TYPE.OPEN_DEATH) batch.setColor(Color.RED);
+                if (cell.getTip() == CELL_TYPE.OPEN_WOUND) batch.setColor(Color.GREEN);
+                if (cell.getTip() == CELL_TYPE.OPEN_FREE) batch.setColor(Color.YELLOW);
+
+
+                batch.draw(textureb, 50 + (j * 22), 300 - (i * 22), 20, 20);
 
             }
-
+            batch.setColor(1,1,1,1);
         }
 
         for (int i = 0; i < 10; i++) {

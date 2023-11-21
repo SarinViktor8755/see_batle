@@ -7,7 +7,7 @@ public class CELL_TYPE {
     ///////////////
 
     public static byte OPEN_FREE = 4; // ОТКРЫТАЯ_ПУСТАЯ
-    public static byte OPEN_WOUND = 5; // ОТКРЫТАЯ РАНЕНИЕ
+    public static byte OPEN_WOUND = 5; // ОТКРЫТАЯ РАНЕНИЕ_________
     public static byte OPEN_DEATH = 6; // ОТКРЫТАЯ_УБИТ
 
 }

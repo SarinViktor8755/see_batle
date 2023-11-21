@@ -4,24 +4,24 @@ ADDED from E:\sb\see_batle\android\AndroidManifest.xml:2:1-29:12
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml:2:1-29:12
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml:2:1-29:12
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml:2:1-29:12
-MERGED from [com.badlogicgames.gdx:gdx-backend-android:1.12.0] C:\Users\vik\.gradle\caches\transforms-3\52631edef59f65140dc477d9bb96a027\transformed\gdx-backend-android-1.12.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.badlogicgames.gdx:gdx-backend-android:1.12.0] C:\Users\vik\.gradle\caches\transforms-3\eac7a072a1351477ef9ad7efa8ef09e3\transformed\jetified-gdx-backend-android-1.12.0\AndroidManifest.xml:2:1-13:12
 MERGED from [androidx.fragment:fragment:1.5.7] C:\Users\vik\.gradle\caches\transforms-3\3e447e853c967e0d736a150b64a702af\transformed\fragment-1.5.7\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.5.1] C:\Users\vik\.gradle\caches\transforms-3\d9b272d89ed939bd30aa1e765ac421cf\transformed\activity-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\vik\.gradle\caches\transforms-3\91979d22522bbaeee1015cec9d3100fe\transformed\jetified-activity-1.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\8a7720275dc05da1938b8d9d40cb9e6a\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\1b4c7227118e289d7e638bf0d8e14566\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\fcc71807ef7891694d50b60307f2edd9\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\7437ddcd19087d955ba28bd6f816d927\transformed\core-ktx-1.2.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\ac3f6f05b217ae2230c2e01795405ac6\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\62941d324dee9ec6705d70e98496ed72\transformed\jetified-core-ktx-1.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\d0e77cb6b1f2f7760815769c3ba97776\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\9bb3be4d76efcccd2b2829879ec76041\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.8.0] C:\Users\vik\.gradle\caches\transforms-3\d63c99952dd814cb712dbec7fd24562c\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vik\.gradle\caches\transforms-3\c40a4808a0829b6977fe8fb274bef20c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\a8cfdc00005a962d44a46a876d8da70d\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\c356159c1cdc81d73496098b05219d6c\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\e8b7cc8637c59cb9df73a38cdab807d6\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\de28c19c59c7186ee5bacad5381a6f07\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\b30e0ebc288a8c98133829b9a55636ee\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\vik\.gradle\caches\transforms-3\6cab68c490021ef1e3e2e8e5b13f5790\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\bce36ee2f4711001c0c4d5077847fe4b\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\vik\.gradle\caches\transforms-3\38c6b38dbd41534b0e1a90ef0842aa64\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\vik\.gradle\caches\transforms-3\92bcbeade65cc7fe92b08db3215a9bbe\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\vik\.gradle\caches\transforms-3\c48c5f6da57466418c738cf0e9854f65\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml:2:1-29:12
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml:2:1-29:12
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml:2:1-29:12
@@ -43,18 +43,20 @@ INJECTED from E:\sb\see_batle\android\AndroidManifest.xml:2:1-29:12
 		ADDED from E:\sb\see_batle\android\AndroidManifest.xml:2:11-69
 uses-feature#0x00020000
 ADDED from E:\sb\see_batle\android\AndroidManifest.xml:5:5-78
-MERGED from [com.badlogicgames.gdx:gdx-backend-android:1.12.0] C:\Users\vik\.gradle\caches\transforms-3\52631edef59f65140dc477d9bb96a027\transformed\gdx-backend-android-1.12.0\AndroidManifest.xml:9:5-11:35
-MERGED from [com.badlogicgames.gdx:gdx-backend-android:1.12.0] C:\Users\vik\.gradle\caches\transforms-3\52631edef59f65140dc477d9bb96a027\transformed\gdx-backend-android-1.12.0\AndroidManifest.xml:9:5-11:35
+MERGED from [com.badlogicgames.gdx:gdx-backend-android:1.12.0] C:\Users\vik\.gradle\caches\transforms-3\eac7a072a1351477ef9ad7efa8ef09e3\transformed\jetified-gdx-backend-android-1.12.0\AndroidManifest.xml:9:5-11:35
+MERGED from [com.badlogicgames.gdx:gdx-backend-android:1.12.0] C:\Users\vik\.gradle\caches\transforms-3\eac7a072a1351477ef9ad7efa8ef09e3\transformed\jetified-gdx-backend-android-1.12.0\AndroidManifest.xml:9:5-11:35
 	android:glEsVersion
 		ADDED from E:\sb\see_batle\android\AndroidManifest.xml:5:19-51
 	android:required
 		ADDED from E:\sb\see_batle\android\AndroidManifest.xml:5:52-75
 application
 ADDED from E:\sb\see_batle\android\AndroidManifest.xml:7:5-27:19
+INJECTED from E:\sb\see_batle\android\AndroidManifest.xml:7:5-27:19
 MERGED from [androidx.core:core:1.8.0] C:\Users\vik\.gradle\caches\transforms-3\d63c99952dd814cb712dbec7fd24562c\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.8.0] C:\Users\vik\.gradle\caches\transforms-3\d63c99952dd814cb712dbec7fd24562c\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vik\.gradle\caches\transforms-3\c40a4808a0829b6977fe8fb274bef20c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vik\.gradle\caches\transforms-3\c40a4808a0829b6977fe8fb274bef20c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+INJECTED from E:\sb\see_batle\android\AndroidManifest.xml:7:5-27:19
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\vik\.gradle\caches\transforms-3\d63c99952dd814cb712dbec7fd24562c\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:label
@@ -63,6 +65,10 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vi
 		ADDED from E:\sb\see_batle\android\AndroidManifest.xml:9:9-41
 	android:appCategory
 		ADDED from E:\sb\see_batle\android\AndroidManifest.xml:12:9-35
+	android:testOnly
+		INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
+		ADDED from E:\sb\see_batle\android\AndroidManifest.xml:7:5-27:19
+		INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
 	tools:ignore
 		ADDED from E:\sb\see_batle\android\AndroidManifest.xml:15:9-39
 	android:icon
@@ -95,24 +101,38 @@ category#android.intent.category.LAUNCHER
 ADDED from E:\sb\see_batle\android\AndroidManifest.xml:24:17-77
 	android:name
 		ADDED from E:\sb\see_batle\android\AndroidManifest.xml:24:27-74
+profileable
+INJECTED from E:\sb\see_batle\android\AndroidManifest.xml reason: profileable injection requested
+INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
+INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
+INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
+INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
+	android:enabled
+		INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
+		ADDED from E:\sb\see_batle\android\AndroidManifest.xml
+		INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
+	android:shell
+		INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
+		ADDED from E:\sb\see_batle\android\AndroidManifest.xml
+		INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
 uses-sdk
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
-MERGED from [com.badlogicgames.gdx:gdx-backend-android:1.12.0] C:\Users\vik\.gradle\caches\transforms-3\52631edef59f65140dc477d9bb96a027\transformed\gdx-backend-android-1.12.0\AndroidManifest.xml:5:5-7:41
-MERGED from [com.badlogicgames.gdx:gdx-backend-android:1.12.0] C:\Users\vik\.gradle\caches\transforms-3\52631edef59f65140dc477d9bb96a027\transformed\gdx-backend-android-1.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.badlogicgames.gdx:gdx-backend-android:1.12.0] C:\Users\vik\.gradle\caches\transforms-3\eac7a072a1351477ef9ad7efa8ef09e3\transformed\jetified-gdx-backend-android-1.12.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.badlogicgames.gdx:gdx-backend-android:1.12.0] C:\Users\vik\.gradle\caches\transforms-3\eac7a072a1351477ef9ad7efa8ef09e3\transformed\jetified-gdx-backend-android-1.12.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.fragment:fragment:1.5.7] C:\Users\vik\.gradle\caches\transforms-3\3e447e853c967e0d736a150b64a702af\transformed\fragment-1.5.7\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.5.7] C:\Users\vik\.gradle\caches\transforms-3\3e447e853c967e0d736a150b64a702af\transformed\fragment-1.5.7\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.5.1] C:\Users\vik\.gradle\caches\transforms-3\d9b272d89ed939bd30aa1e765ac421cf\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.5.1] C:\Users\vik\.gradle\caches\transforms-3\d9b272d89ed939bd30aa1e765ac421cf\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\vik\.gradle\caches\transforms-3\91979d22522bbaeee1015cec9d3100fe\transformed\jetified-activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\vik\.gradle\caches\transforms-3\91979d22522bbaeee1015cec9d3100fe\transformed\jetified-activity-1.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\8a7720275dc05da1938b8d9d40cb9e6a\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\8a7720275dc05da1938b8d9d40cb9e6a\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\1b4c7227118e289d7e638bf0d8e14566\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\1b4c7227118e289d7e638bf0d8e14566\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\fcc71807ef7891694d50b60307f2edd9\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\fcc71807ef7891694d50b60307f2edd9\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\7437ddcd19087d955ba28bd6f816d927\transformed\core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\7437ddcd19087d955ba28bd6f816d927\transformed\core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\ac3f6f05b217ae2230c2e01795405ac6\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\ac3f6f05b217ae2230c2e01795405ac6\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\62941d324dee9ec6705d70e98496ed72\transformed\jetified-core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\62941d324dee9ec6705d70e98496ed72\transformed\jetified-core-ktx-1.2.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\d0e77cb6b1f2f7760815769c3ba97776\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\d0e77cb6b1f2f7760815769c3ba97776\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\9bb3be4d76efcccd2b2829879ec76041\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
@@ -121,20 +141,20 @@ MERGED from [androidx.core:core:1.8.0] C:\Users\vik\.gradle\caches\transforms-3\
 MERGED from [androidx.core:core:1.8.0] C:\Users\vik\.gradle\caches\transforms-3\d63c99952dd814cb712dbec7fd24562c\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vik\.gradle\caches\transforms-3\c40a4808a0829b6977fe8fb274bef20c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vik\.gradle\caches\transforms-3\c40a4808a0829b6977fe8fb274bef20c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\a8cfdc00005a962d44a46a876d8da70d\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\a8cfdc00005a962d44a46a876d8da70d\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\c356159c1cdc81d73496098b05219d6c\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\vik\.gradle\caches\transforms-3\c356159c1cdc81d73496098b05219d6c\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\e8b7cc8637c59cb9df73a38cdab807d6\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\e8b7cc8637c59cb9df73a38cdab807d6\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\de28c19c59c7186ee5bacad5381a6f07\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\de28c19c59c7186ee5bacad5381a6f07\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\b30e0ebc288a8c98133829b9a55636ee\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\vik\.gradle\caches\transforms-3\b30e0ebc288a8c98133829b9a55636ee\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\vik\.gradle\caches\transforms-3\6cab68c490021ef1e3e2e8e5b13f5790\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\vik\.gradle\caches\transforms-3\6cab68c490021ef1e3e2e8e5b13f5790\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\bce36ee2f4711001c0c4d5077847fe4b\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\vik\.gradle\caches\transforms-3\bce36ee2f4711001c0c4d5077847fe4b\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\vik\.gradle\caches\transforms-3\38c6b38dbd41534b0e1a90ef0842aa64\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\vik\.gradle\caches\transforms-3\38c6b38dbd41534b0e1a90ef0842aa64\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\vik\.gradle\caches\transforms-3\92bcbeade65cc7fe92b08db3215a9bbe\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\vik\.gradle\caches\transforms-3\92bcbeade65cc7fe92b08db3215a9bbe\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\vik\.gradle\caches\transforms-3\c48c5f6da57466418c738cf0e9854f65\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\vik\.gradle\caches\transforms-3\c48c5f6da57466418c738cf0e9854f65\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
 INJECTED from E:\sb\see_batle\android\AndroidManifest.xml
 	android:targetSdkVersion

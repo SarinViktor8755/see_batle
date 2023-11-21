@@ -16,11 +16,11 @@
         android:allowBackup="true"
         android:appCategory="game"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-        android:debuggable="true"
         android:fullBackupContent="true"
         android:icon="@drawable/ic_launcher"
         android:isGame="true"
         android:label="@string/app_name"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.sea.battle.lite.AndroidLauncher"
@@ -34,6 +34,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <profileable
+            android:enabled="true"
+            android:shell="true" />
     </application>
 
 </manifest>
