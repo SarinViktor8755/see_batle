@@ -50,37 +50,37 @@ public class Field {
                 auto_ras();
             }
         }
-        Field.size = 0;
-
-        while (Field.size < 3) {
-            create_random_ship(2);
-            iteration++;
-            if (iteration > 350) {
-                clear_field();
-                auto_ras();
-            }
-        }
-        Field.size = 0;
-
-        while (Field.size < 2) {
-            create_random_ship(3);
-            iteration++;
-            if (iteration > 350) {
-                clear_field();
-                auto_ras();
-            }
-        }
-        Field.size = 0;
-
-        while (Field.size < 1) {
-            create_random_ship(4);
-            iteration++;
-            if (iteration > 350) {
-                clear_field();
-                auto_ras();
-            }
-        }
-        //  System.out.println("iteration"+iteration);
+//        Field.size = 0;
+//
+//        while (Field.size < 3) {
+//            create_random_ship(2);
+//            iteration++;
+//            if (iteration > 350) {
+//                clear_field();
+//                auto_ras();
+//            }
+//        }
+//        Field.size = 0;
+//
+//        while (Field.size < 2) {
+//            create_random_ship(3);
+//            iteration++;
+//            if (iteration > 350) {
+//                clear_field();
+//                auto_ras();
+//            }
+//        }
+//        Field.size = 0;
+//
+//        while (Field.size < 1) {
+//            create_random_ship(4);
+//            iteration++;
+//            if (iteration > 350) {
+//                clear_field();
+//                auto_ras();
+//            }
+//        }
+//        //  System.out.println("iteration"+iteration);
 
     }
 
@@ -174,8 +174,6 @@ public class Field {
             for (int j = 0; j < 10; j++) {
                 Cell c = field_matrix[i][j];
                 if (c.getTip() == CELL_TYPE.OPEN_DEATH) {
-
-
                     for (int k = -1; k <= 1; k++) {
                         for (int l = -1; l <= 1; l++) {
                             try {
@@ -185,14 +183,32 @@ public class Field {
                                 continue;
                             }
                         }
-
                     }
-
-
+                }else
+                if (c.getTip() == CELL_TYPE.UNOPENED_EMPTY) {
+                    try {
+                    if (field_matrix[i-1][j-1].getTip() != CELL_TYPE.OPEN_DEATH)
+                        field_matrix[i-1][j-1].setTip(CELL_TYPE.OPEN_WOUND);
+                    } catch (ArrayIndexOutOfBoundsException e) {}
+                    try {
+                    if (field_matrix[i+1][j+1].getTip() != CELL_TYPE.OPEN_DEATH)
+                        field_matrix[i+1][j+1].setTip(CELL_TYPE.OPEN_WOUND);
+                    } catch (ArrayIndexOutOfBoundsException e) {}
+                    try {
+                    if (field_matrix[i-1][j+1].getTip() != CELL_TYPE.OPEN_DEATH)
+                        field_matrix[i-1][j+1].setTip(CELL_TYPE.OPEN_WOUND);
+                    } catch (ArrayIndexOutOfBoundsException e) {}
+                    try {
+                    if (field_matrix[i+1][j-1].getTip() != CELL_TYPE.OPEN_DEATH)
+                        field_matrix[i+1][j-1].setTip(CELL_TYPE.OPEN_WOUND);
+                    } catch (ArrayIndexOutOfBoundsException e) {}
                 }
 
             }
         }
+
+
+
     }
 
 
