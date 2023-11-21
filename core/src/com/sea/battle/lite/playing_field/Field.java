@@ -178,7 +178,7 @@ public class Field {
                         for (int l = -1; l <= 1; l++) {
                             try {
                                 if (field_matrix[i + k][j + l].getTip() != CELL_TYPE.OPEN_DEATH)
-                                    field_matrix[i + k][j + l].setTip(CELL_TYPE.OPEN_WOUND);
+                                    field_matrix[i + k][j + l].setTip(CELL_TYPE.OPEN_FREE);
                             } catch (ArrayIndexOutOfBoundsException e) {
                                 continue;
                             }
@@ -188,19 +188,19 @@ public class Field {
                 if (c.getTip() == CELL_TYPE.UNOPENED_EMPTY) {
                     try {
                     if (field_matrix[i-1][j-1].getTip() != CELL_TYPE.OPEN_DEATH)
-                        field_matrix[i-1][j-1].setTip(CELL_TYPE.OPEN_WOUND);
+                        field_matrix[i-1][j-1].setTip(CELL_TYPE.OPEN_FREE);
                     } catch (ArrayIndexOutOfBoundsException e) {}
                     try {
                     if (field_matrix[i+1][j+1].getTip() != CELL_TYPE.OPEN_DEATH)
-                        field_matrix[i+1][j+1].setTip(CELL_TYPE.OPEN_WOUND);
+                        field_matrix[i+1][j+1].setTip(CELL_TYPE.OPEN_FREE);
                     } catch (ArrayIndexOutOfBoundsException e) {}
                     try {
                     if (field_matrix[i-1][j+1].getTip() != CELL_TYPE.OPEN_DEATH)
-                        field_matrix[i-1][j+1].setTip(CELL_TYPE.OPEN_WOUND);
+                        field_matrix[i-1][j+1].setTip(CELL_TYPE.OPEN_FREE);
                     } catch (ArrayIndexOutOfBoundsException e) {}
                     try {
                     if (field_matrix[i+1][j-1].getTip() != CELL_TYPE.OPEN_DEATH)
-                        field_matrix[i+1][j-1].setTip(CELL_TYPE.OPEN_WOUND);
+                        field_matrix[i+1][j-1].setTip(CELL_TYPE.OPEN_FREE);
                     } catch (ArrayIndexOutOfBoundsException e) {}
                 }
 

@@ -46,11 +46,17 @@ public class MainGame extends ApplicationAdapter {
                 /////////////////
 
                 if (cell.getTip() == CELL_TYPE.OPEN_DEATH) batch.setColor(Color.RED);
-                if (cell.getTip() == CELL_TYPE.OPEN_WOUND) batch.setColor(Color.GREEN);
-                if (cell.getTip() == CELL_TYPE.OPEN_FREE) batch.setColor(Color.YELLOW);
+                if (cell.getTip() == CELL_TYPE.OPEN_WOUND) batch.setColor(Color.DARK_GRAY);
+                if (cell.getTip() == CELL_TYPE.OPEN_FREE) batch.setColor(0, 1, 1, 1);
 
 
-                batch.draw(textureb, 50 + (j * 22), 300 - (i * 22), 20, 20);
+                batch.draw(texture, 50 + (j * 22), 300 - (i * 22), 20, 20);
+
+
+
+                if (cell.getTip() == CELL_TYPE.OPEN_FREE) {
+                    batch.setColor(Color.BROWN);
+                    batch.draw(textureb, 50 + (j * 22), 300 - (i * 22), 20, 20);}
 
             }
             batch.setColor(1,1,1,1);
