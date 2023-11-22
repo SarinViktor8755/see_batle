@@ -274,7 +274,7 @@ public class Field {
     }
 
     public void search_dead_ships(){  ///поиск мертвых кораблей
-        
+
 
     }
 
