@@ -2,12 +2,17 @@ package com.sea.battle.lite.playing_field;
 
 import com.badlogic.gdx.math.MathUtils;
 
+import java.util.ArrayList;
+
 public class Field {
 
     private Cell[][] field_matrix;
     public static int size = 0;
 
+    private ArrayList<Ship> shipArrayList;
+
     public Field() {
+        shipArrayList = new ArrayList<>();
         create_playing_field();
 
         // auto_ras();
@@ -99,6 +104,7 @@ public class Field {
     }
 
     public boolean add_ship_on_field(Ship ship) {
+        this.shipArrayList.add(ship);
         if (!checking_setting_of_the_ship(ship)) return false;
         if (!ship.orientation_horizontal) {
             for (int i = ship.x; i < ship.x + ship.size; i++) {
@@ -111,6 +117,7 @@ public class Field {
             }
             return true;
         }
+
     }
 
     private boolean checking_setting_of_the_ship(Ship ship) { // Проверка - можно ли ставить
@@ -197,7 +204,7 @@ public class Field {
                     }
                 } else if (c.getTip() == CELL_TYPE.OPEN_WOUND) {  // Если ранен
                     try {
-<<<<<<< HEAD
+
                         if (field_matrix[i - 1][j - 1].getTip() != CELL_TYPE.OPEN_DEATH)
                             field_matrix[i - 1][j - 1].setTip(CELL_TYPE.OPEN_FREE);
                     } catch (ArrayIndexOutOfBoundsException e) {
@@ -217,23 +224,7 @@ public class Field {
                             field_matrix[i + 1][j - 1].setTip(CELL_TYPE.OPEN_FREE);
                     } catch (ArrayIndexOutOfBoundsException e) {
                     }
-=======
-                    if (field_matrix[i-1][j-1].getTip() != CELL_TYPE.OPEN_DEATH)
-                        field_matrix[i-1][j-1].setTip(CELL_TYPE.OPEN_FREE);
-                    } catch (ArrayIndexOutOfBoundsException e) {}
-                    try {
-                    if (field_matrix[i+1][j+1].getTip() != CELL_TYPE.OPEN_DEATH)
-                        field_matrix[i+1][j+1].setTip(CELL_TYPE.OPEN_FREE);
-                    } catch (ArrayIndexOutOfBoundsException e) {}
-                    try {
-                    if (field_matrix[i-1][j+1].getTip() != CELL_TYPE.OPEN_DEATH)
-                        field_matrix[i-1][j+1].setTip(CELL_TYPE.OPEN_FREE);
-                    } catch (ArrayIndexOutOfBoundsException e) {}
-                    try {
-                    if (field_matrix[i+1][j-1].getTip() != CELL_TYPE.OPEN_DEATH)
-                        field_matrix[i+1][j-1].setTip(CELL_TYPE.OPEN_FREE);
-                    } catch (ArrayIndexOutOfBoundsException e) {}
->>>>>>> cd87a6bd097539ad7956d8ee0f1ba129a3d9ae08
+
                 }
 
             }
@@ -241,19 +232,18 @@ public class Field {
 
 
 ///////////////////////////////////////////////////////////////////////
-        boolean e = true;
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                Cell c = field_matrix[i][j];
-
-                e = c.getTip() == CELL_TYPE.OPEN_WOUND;
-                if(CELL_TYPE.isOCCUPIED(field_matrix[i-1][j])) e = true;
-                if(CELL_TYPE.isOCCUPIED(field_matrix[i+1][j])) e = true;
-                if(CELL_TYPE.isOCCUPIED(field_matrix[i][j-1])) e = true;
-                if(CELL_TYPE.isOCCUPIED(field_matrix[i][j+1])) e = true;
-
-                if(e) c.setTip(CELL_TYPE.OPEN_DEATH);
-            }}
+//        boolean e = true;
+//        for (int i = 0; i < 10; i++) {
+//            for (int j = 0; j < 10; j++) {
+//                Cell c = field_matrix[i][j];
+//
+//                e = c.getTip() == CELL_TYPE.OPEN_WOUND;
+//                if(CELL_TYPE.isOCCUPIED(field_matrix[i-1][j])) e = true;
+//                if(CELL_TYPE.isOCCUPIED(field_matrix[i+1][j])) e = true;
+//                if(CELL_TYPE.isOCCUPIED(field_matrix[i][j-1])) e = true;
+//                if(CELL_TYPE.isOCCUPIED(field_matrix[i][j+1])) e = true;
+//                if(e) c.setTip(CELL_TYPE.OPEN_DEATH);
+//            }}
 
 
     }
@@ -280,6 +270,11 @@ public class Field {
 
         auto_completion_the_card();
         return true;
+
+    }
+
+    public void search_dead_ships(){  ///поиск мертвых кораблей
+        
 
     }
 

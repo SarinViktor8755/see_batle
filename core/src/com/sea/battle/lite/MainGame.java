@@ -35,11 +35,9 @@ public class MainGame extends ApplicationAdapter {
         game_match.player_playin_field.auto_completion_the_card();
         ScreenUtils.clear(.5f, .5f, .5f, 1);
         batch.begin();
-<<<<<<< HEAD
+
         batch.setColor(1, 1, 1, 1);
-=======
-        batch.setColor(1,1,1,1);
->>>>>>> cd87a6bd097539ad7956d8ee0f1ba129a3d9ae08
+
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 Cell cell = game_match.player_playin_field.getCellmatrix(i, j);
@@ -50,25 +48,14 @@ public class MainGame extends ApplicationAdapter {
                 /////////////////
 
                 if (cell.getTip() == CELL_TYPE.OPEN_DEATH) batch.setColor(Color.RED);
-<<<<<<< HEAD
-                if (cell.getTip() == CELL_TYPE.OPEN_WOUND) batch.setColor(.5f, .5f, 0, 1);
-=======
-                if (cell.getTip() == CELL_TYPE.OPEN_WOUND) batch.setColor(Color.DARK_GRAY);
->>>>>>> cd87a6bd097539ad7956d8ee0f1ba129a3d9ae08
-                if (cell.getTip() == CELL_TYPE.OPEN_FREE) batch.setColor(0, 1, 1, 1);
 
+                if (cell.getTip() == CELL_TYPE.OPEN_WOUND) batch.setColor(.5f, .5f, 0, 1);
+
+                if (cell.getTip() == CELL_TYPE.OPEN_FREE) batch.setColor(0, 1, 1, 1);
 
                 batch.draw(texture, 50 + (j * 22), 300 - (i * 22), 20, 20);
 
 
-<<<<<<< HEAD
-                if (cell.getTip() == CELL_TYPE.OPEN_FREE) {
-                    batch.setColor(Color.BROWN);
-                    batch.draw(textureb, 50 + (j * 22), 300 - (i * 22), 20, 20);
-                }
-            }
-            batch.setColor(1, 1, 1, 1);
-=======
 
                 if (cell.getTip() == CELL_TYPE.OPEN_FREE) {
                     batch.setColor(Color.BROWN);
@@ -76,7 +63,7 @@ public class MainGame extends ApplicationAdapter {
 
             }
             batch.setColor(1,1,1,1);
->>>>>>> cd87a6bd097539ad7956d8ee0f1ba129a3d9ae08
+
         }
 
 //        for (int i = 0; i < 10; i++) {
