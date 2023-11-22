@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="E:\sb\see_batle\android"
+    name=":android"
+    type="APP"
+    maven="see_batle:android:"
+    gradle="7.3.1"
+    buildFolder="build"
+    bootClassPath="E:\SDKAndroid\platforms\android-33\android.jar;E:\SDKAndroid\build-tools\33.0.2\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-33">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

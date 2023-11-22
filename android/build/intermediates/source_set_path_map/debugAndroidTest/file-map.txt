@@ -1,0 +1,7 @@
+com.sea.battle.lite.test.android-androidTest-0 E:\sb\see_batle\android\build\generated\res\resValues\androidTest\debug
+com.sea.battle.lite.test.android-androidTest-1 E:\sb\see_batle\android\build\generated\res\rs\androidTest\debug
+com.sea.battle.lite.test.android-mergeDebugAndroidTestResources-2 E:\sb\see_batle\android\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.sea.battle.lite.test.android-mergeDebugAndroidTestResources-3 E:\sb\see_batle\android\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.sea.battle.lite.test.android-merged_res-4 E:\sb\see_batle\android\build\intermediates\merged_res\debugAndroidTest
+com.sea.battle.lite.test.android-androidTest-5 E:\sb\see_batle\android\src\androidTest\res
+com.sea.battle.lite.test.android-androidTestDebug-6 E:\sb\see_batle\android\src\androidTestDebug\res

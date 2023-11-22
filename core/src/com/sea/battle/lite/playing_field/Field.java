@@ -197,6 +197,7 @@ public class Field {
                     }
                 } else if (c.getTip() == CELL_TYPE.OPEN_WOUND) {  // Если ранен
                     try {
+<<<<<<< HEAD
                         if (field_matrix[i - 1][j - 1].getTip() != CELL_TYPE.OPEN_DEATH)
                             field_matrix[i - 1][j - 1].setTip(CELL_TYPE.OPEN_FREE);
                     } catch (ArrayIndexOutOfBoundsException e) {
@@ -216,6 +217,23 @@ public class Field {
                             field_matrix[i + 1][j - 1].setTip(CELL_TYPE.OPEN_FREE);
                     } catch (ArrayIndexOutOfBoundsException e) {
                     }
+=======
+                    if (field_matrix[i-1][j-1].getTip() != CELL_TYPE.OPEN_DEATH)
+                        field_matrix[i-1][j-1].setTip(CELL_TYPE.OPEN_FREE);
+                    } catch (ArrayIndexOutOfBoundsException e) {}
+                    try {
+                    if (field_matrix[i+1][j+1].getTip() != CELL_TYPE.OPEN_DEATH)
+                        field_matrix[i+1][j+1].setTip(CELL_TYPE.OPEN_FREE);
+                    } catch (ArrayIndexOutOfBoundsException e) {}
+                    try {
+                    if (field_matrix[i-1][j+1].getTip() != CELL_TYPE.OPEN_DEATH)
+                        field_matrix[i-1][j+1].setTip(CELL_TYPE.OPEN_FREE);
+                    } catch (ArrayIndexOutOfBoundsException e) {}
+                    try {
+                    if (field_matrix[i+1][j-1].getTip() != CELL_TYPE.OPEN_DEATH)
+                        field_matrix[i+1][j-1].setTip(CELL_TYPE.OPEN_FREE);
+                    } catch (ArrayIndexOutOfBoundsException e) {}
+>>>>>>> cd87a6bd097539ad7956d8ee0f1ba129a3d9ae08
                 }
 
             }

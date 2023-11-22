@@ -1,0 +1,17 @@
+com.sea.battle.lite.android-lifecycle-viewmodel-2.5.1-0 C:\Users\vik\.gradle\caches\transforms-3\1b4c7227118e289d7e638bf0d8e14566\transformed\lifecycle-viewmodel-2.5.1\res
+com.sea.battle.lite.android-fragment-1.5.7-1 C:\Users\vik\.gradle\caches\transforms-3\3e447e853c967e0d736a150b64a702af\transformed\fragment-1.5.7\res
+com.sea.battle.lite.android-annotation-experimental-1.1.0-2 C:\Users\vik\.gradle\caches\transforms-3\92bcbeade65cc7fe92b08db3215a9bbe\transformed\annotation-experimental-1.1.0\res
+com.sea.battle.lite.android-savedstate-1.2.0-3 C:\Users\vik\.gradle\caches\transforms-3\a8cfdc00005a962d44a46a876d8da70d\transformed\savedstate-1.2.0\res
+com.sea.battle.lite.android-lifecycle-livedata-core-2.5.1-4 C:\Users\vik\.gradle\caches\transforms-3\bce36ee2f4711001c0c4d5077847fe4b\transformed\lifecycle-livedata-core-2.5.1\res
+com.sea.battle.lite.android-core-1.8.0-5 C:\Users\vik\.gradle\caches\transforms-3\d63c99952dd814cb712dbec7fd24562c\transformed\core-1.8.0\res
+com.sea.battle.lite.android-activity-1.5.1-6 C:\Users\vik\.gradle\caches\transforms-3\d9b272d89ed939bd30aa1e765ac421cf\transformed\activity-1.5.1\res
+com.sea.battle.lite.android-lifecycle-runtime-2.5.1-7 C:\Users\vik\.gradle\caches\transforms-3\e8b7cc8637c59cb9df73a38cdab807d6\transformed\lifecycle-runtime-2.5.1\res
+com.sea.battle.lite.android-lifecycle-viewmodel-savedstate-2.5.1-8 C:\Users\vik\.gradle\caches\transforms-3\fcc71807ef7891694d50b60307f2edd9\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+com.sea.battle.lite.android-pngs-9 E:\sb\see_batle\android\build\generated\res\pngs\debug
+com.sea.battle.lite.android-resValues-10 E:\sb\see_batle\android\build\generated\res\resValues\debug
+com.sea.battle.lite.android-rs-11 E:\sb\see_batle\android\build\generated\res\rs\debug
+com.sea.battle.lite.android-mergeDebugResources-12 E:\sb\see_batle\android\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.sea.battle.lite.android-mergeDebugResources-13 E:\sb\see_batle\android\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.sea.battle.lite.android-merged_res-14 E:\sb\see_batle\android\build\intermediates\merged_res\debug
+com.sea.battle.lite.android-android-15 E:\sb\see_batle\android\res
+com.sea.battle.lite.android-debug-16 E:\sb\see_batle\android\src\debug\res
