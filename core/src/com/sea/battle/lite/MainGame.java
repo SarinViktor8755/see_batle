@@ -32,7 +32,7 @@ public class MainGame extends ApplicationAdapter {
 
     @Override
     public void render() {
-        game_match.player_playin_field.auto_completion_the_card();
+       // game_match.player_playin_field.auto_completion_the_card();
         ScreenUtils.clear(.5f, .5f, .5f, 1);
         batch.begin();
 
@@ -47,7 +47,7 @@ public class MainGame extends ApplicationAdapter {
 
                 /////////////////
 
-                if (cell.getTip() == CELL_TYPE.OPEN_DEATH) batch.setColor(Color.RED);
+                if (cell.getTip() == CELL_TYPE.OPEN_DEATH) batch.setColor(Color.LIGHT_GRAY);
 
                 if (cell.getTip() == CELL_TYPE.OPEN_WOUND) batch.setColor(.5f, .5f, 0, 1);
 
@@ -59,6 +59,10 @@ public class MainGame extends ApplicationAdapter {
 
                 if (cell.getTip() == CELL_TYPE.OPEN_FREE) {
                     batch.setColor(Color.BROWN);
+                    batch.draw(textureb, 50 + (j * 22), 300 - (i * 22), 20, 20);}
+
+                if (cell.getTip() == CELL_TYPE.OPEN_DEATH) {
+                    batch.setColor(Color.GOLD);
                     batch.draw(textureb, 50 + (j * 22), 300 - (i * 22), 20, 20);}
 
             }

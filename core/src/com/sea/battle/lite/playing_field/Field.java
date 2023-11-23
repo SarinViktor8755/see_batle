@@ -3,6 +3,7 @@ package com.sea.battle.lite.playing_field;
 import com.badlogic.gdx.math.MathUtils;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Field {
 
@@ -39,16 +40,19 @@ public class Field {
         ship.size = (byte) size;
         ship.orientation_horizontal = MathUtils.randomBoolean();
         boolean s = add_ship_on_field(ship);
-        if (s) Field.size++;
 
+        if (s) Field.size++;
+        if (s) this.shipArrayList.add(ship);
 
     }
 
 
     public void auto_ras() {
+        shipArrayList.clear();
         Field.size = 0;
         int iteration = 0;
         clear_field();
+
 
         while (Field.size < 4) {
             create_random_ship(1);
@@ -101,10 +105,11 @@ public class Field {
             System.out.println();
         }
         System.out.println("---------");
+
     }
 
     public boolean add_ship_on_field(Ship ship) {
-        this.shipArrayList.add(ship);
+
         if (!checking_setting_of_the_ship(ship)) return false;
         if (!ship.orientation_horizontal) {
             for (int i = ship.x; i < ship.x + ship.size; i++) {
@@ -179,7 +184,7 @@ public class Field {
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 Cell c = field_matrix[i][j];
-                if (c.getTip() == CELL_TYPE.OPEN_WOUND) s++;
+                if (c.getTip() == CELL_TYPE.OPEN_DEATH) s++;
             }
 
         }
@@ -251,8 +256,11 @@ public class Field {
 
     public boolean take_attac(int x, int y) {
         Cell c = field_matrix[x][y];
-        if(c.getTip() == CELL_TYPE.OPEN_FREE) return false;
-        if(c.getTip() == CELL_TYPE.OPEN_WOUND) return false;
+
+
+        if (c.getTip() == CELL_TYPE.OPEN_FREE) return false;
+        if (c.getTip() == CELL_TYPE.OPEN_WOUND) return false;
+        if (c.getTip() == CELL_TYPE.OPEN_DEATH) return false;
 
 
         if (c.getTip() == CELL_TYPE.UNOPENED) {
@@ -261,22 +269,52 @@ public class Field {
 
         if (c.getTip() == CELL_TYPE.UNOPENED_OCCUPIED) {
             c.setTip(CELL_TYPE.OPEN_WOUND);
+
+
+            search_dead_ships();
         }
 
 
-      //  System.ouret.println("adttac" + x);
-       // c.setTip(CELL_TYPE.OPEN_DEATH);
+        //  System.ouret.println("adttac" + x);
+        // c.setTip(CELL_TYPE.OPEN_DEATH);
 
-
+//        for (int i = 0; i < shipArrayList.size(); i++) {
+//         //   field_matrix[shipArrayList.get(i).x][shipArrayList.get(i).y].setTip(CELL_TYPE.OPEN_DEATH);
+//            System.out.println(shipArrayList.get(i).x + "  " + shipArrayList.get(i).y);
+//        }
+//        System.out.println("+++++++++++++++++++");
         auto_completion_the_card();
         return true;
 
     }
 
-    public void search_dead_ships(){  ///поиск мертвых кораблей
+    public void search_dead_ships() {  ///поиск мертвых кораблей
+        Iterator<Ship> itr = shipArrayList.iterator();
+        while (itr.hasNext()) {
+            Ship s = itr.next();
+            if (!s.orientation_horizontal) {
+                for (int i = s.x; i < s.x + s.size; i++) {
+                    if (field_matrix[i][s.y].getTip() != CELL_TYPE.OPEN_WOUND) break;
+                    for (int j = s.x; j < s.x + s.size; j++) {
+                        field_matrix[j][s.y].setTip(CELL_TYPE.OPEN_DEATH);
+                    }
+                }
+            }
 
+            if (s.orientation_horizontal) {
+                for (int i = s.y; i < s.y + s.size; i++) {
+                    if (field_matrix[s.x][i].getTip() != CELL_TYPE.OPEN_WOUND) break;
+                    for (int j = s.y; j < s.y + s.size; j++) {
+                        field_matrix[s.x][j].setTip(CELL_TYPE.OPEN_DEATH);
+                    }
+                }
+            }
+
+        }
 
     }
-
-
 }
+
+
+
+
