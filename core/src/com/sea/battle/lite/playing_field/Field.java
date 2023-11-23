@@ -188,8 +188,11 @@ public class Field {
             }
 
         }
-        if (s == 20) return true;
-        else return false;
+
+        if (s == 20) {
+            print_playing_field();
+            return true;
+        } else return false;
     }
 
     public void auto_completion_the_card() {
@@ -295,6 +298,7 @@ public class Field {
             if (!s.orientation_horizontal) {
                 for (int i = s.x; i < s.x + s.size; i++) {
                     if (field_matrix[i][s.y].getTip() != CELL_TYPE.OPEN_WOUND) break;
+                    //if (field_matrix[i][s.y].getTip() == CELL_TYPE.OPEN_FREE) break;
                     for (int j = s.x; j < s.x + s.size; j++) {
                         field_matrix[j][s.y].setTip(CELL_TYPE.OPEN_DEATH);
                     }
@@ -304,15 +308,16 @@ public class Field {
             if (s.orientation_horizontal) {
                 for (int i = s.y; i < s.y + s.size; i++) {
                     if (field_matrix[s.x][i].getTip() != CELL_TYPE.OPEN_WOUND) break;
+                   // if (field_matrix[s.x][i].getTip() == CELL_TYPE.OPEN_FREE) break;
                     for (int j = s.y; j < s.y + s.size; j++) {
                         field_matrix[s.x][j].setTip(CELL_TYPE.OPEN_DEATH);
                     }
                 }
             }
-
         }
-
     }
+
+
 }
 
 
