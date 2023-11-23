@@ -292,26 +292,34 @@ public class Field {
     }
 
     public void search_dead_ships() {  ///поиск мертвых кораблей
+        boolean r=true ;
         Iterator<Ship> itr = shipArrayList.iterator();
         while (itr.hasNext()) {
             Ship s = itr.next();
             if (!s.orientation_horizontal) {
                 for (int i = s.x; i < s.x + s.size; i++) {
-                    if (field_matrix[i][s.y].getTip() != CELL_TYPE.OPEN_WOUND) break;
+                    r = true;
+                   // System.out.println(field_matrix[i][s.y].getTip());
+                    if (field_matrix[i][s.y].getTip() != CELL_TYPE.OPEN_WOUND) r = false;
+                    //if (field_matrix[i][s.y].getTip() != CELL_TYPE.OPEN_WOUND) break;
                     //if (field_matrix[i][s.y].getTip() == CELL_TYPE.OPEN_FREE) break;
-                    for (int j = s.x; j < s.x + s.size; j++) {
-                        field_matrix[j][s.y].setTip(CELL_TYPE.OPEN_DEATH);
-                    }
+                    if (r)
+                        for (int j = s.x; j < s.x + s.size; j++) {
+                            field_matrix[j][s.y].setTip(CELL_TYPE.OPEN_DEATH);
+                        }
                 }
             }
 
             if (s.orientation_horizontal) {
                 for (int i = s.y; i < s.y + s.size; i++) {
-                    if (field_matrix[s.x][i].getTip() != CELL_TYPE.OPEN_WOUND) break;
-                   // if (field_matrix[s.x][i].getTip() == CELL_TYPE.OPEN_FREE) break;
-                    for (int j = s.y; j < s.y + s.size; j++) {
-                        field_matrix[s.x][j].setTip(CELL_TYPE.OPEN_DEATH);
-                    }
+                    r = true;
+                    if (field_matrix[s.x][i].getTip() != CELL_TYPE.OPEN_WOUND) r = false;
+                    // if (field_matrix[s.x][i].getTip() != CELL_TYPE.OPEN_WOUND) break;
+                    // if (field_matrix[s.x][i].getTip() == CELL_TYPE.OPEN_FREE) break;
+                    if (r)
+                        for (int j = s.y; j < s.y + s.size; j++) {
+                            field_matrix[s.x][j].setTip(CELL_TYPE.OPEN_DEATH);
+                        }
                 }
             }
         }
