@@ -8,7 +8,7 @@ public class Game_match {
 
     public Game_match() {
         player_playin_field = new Field();
-     //   opponent_playing_field = new Field();
+        opponent_playing_field = new Field();
     }
 
 

@@ -179,7 +179,7 @@ public class Field {
     }
 
 
-    public boolean isFeil() { //проверка проиграл или нет
+    public boolean isFailure() { //проверка проиграл или нет
         int s = 0;
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
@@ -274,7 +274,6 @@ public class Field {
             c.setTip(CELL_TYPE.OPEN_WOUND);
 
 
-            search_dead_ships();
         }
 
 
@@ -286,41 +285,40 @@ public class Field {
 //            System.out.println(shipArrayList.get(i).x + "  " + shipArrayList.get(i).y);
 //        }
 //        System.out.println("+++++++++++++++++++");
+        search_dead_ships();
         auto_completion_the_card();
+
         return true;
 
     }
 
     public void search_dead_ships() {  ///поиск мертвых кораблей
-        boolean r=true ;
+        boolean r;
         Iterator<Ship> itr = shipArrayList.iterator();
         while (itr.hasNext()) {
             Ship s = itr.next();
             if (!s.orientation_horizontal) {
-                for (int i = s.x; i < s.x + s.size; i++) {
-                    r = true;
-                   // System.out.println(field_matrix[i][s.y].getTip());
-                    if (field_matrix[i][s.y].getTip() != CELL_TYPE.OPEN_WOUND) r = false;
-                    //if (field_matrix[i][s.y].getTip() != CELL_TYPE.OPEN_WOUND) break;
-                    //if (field_matrix[i][s.y].getTip() == CELL_TYPE.OPEN_FREE) break;
-                    if (r)
-                        for (int j = s.x; j < s.x + s.size; j++) {
-                            field_matrix[j][s.y].setTip(CELL_TYPE.OPEN_DEATH);
-                        }
+                r = true;
+                for (int m = s.x; m < s.x + s.size; m++) {
+
+                    if (field_matrix[m][s.y].getTip() != CELL_TYPE.OPEN_WOUND) r = false;
                 }
+                if (r)
+                    for (int j = s.x; j < s.x + s.size; j++) {
+                        field_matrix[j][s.y].setTip(CELL_TYPE.OPEN_DEATH);
+                    }
             }
 
             if (s.orientation_horizontal) {
+                r = true;
                 for (int i = s.y; i < s.y + s.size; i++) {
-                    r = true;
                     if (field_matrix[s.x][i].getTip() != CELL_TYPE.OPEN_WOUND) r = false;
-                    // if (field_matrix[s.x][i].getTip() != CELL_TYPE.OPEN_WOUND) break;
-                    // if (field_matrix[s.x][i].getTip() == CELL_TYPE.OPEN_FREE) break;
-                    if (r)
-                        for (int j = s.y; j < s.y + s.size; j++) {
-                            field_matrix[s.x][j].setTip(CELL_TYPE.OPEN_DEATH);
-                        }
+
                 }
+                if (r)
+                    for (int k = s.y; k < s.y + s.size; k++) {
+                        field_matrix[s.x][k].setTip(CELL_TYPE.OPEN_DEATH);
+                    }
             }
         }
     }
