@@ -13,7 +13,7 @@ public class CELL_TYPE {
 
     public static byte AIOBE = -100; // Вышли за приделы массива
 
-    static boolean isOCCUPIED(Cell c) {
+    static public boolean isOCCUPIED(Cell c) {
         try {
             if (c.getTip() == UNOPENED_OCCUPIED) return true;
             if (c.getTip() == OPEN_WOUND) return true;

@@ -150,13 +150,20 @@ public class MainGame extends ApplicationAdapter {
             return;
         }
 
+        boolean z;
+
         if (o) {
             boolean r;
             do {
-                Coordinates attac = mainArtificialIntelligence.decide(game_match.opponent_playing_field.getField_matrix());
-                r = game_match.opponent_playing_field.take_attac(attac.x,attac.y);
+                Coordinates attacs = mainArtificialIntelligence.decide(game_match.opponent_playing_field.getField_matrix());
+                r = game_match.opponent_playing_field.take_attac(attacs.x,attacs.y);
+                z = CELL_TYPE.isOCCUPIED(game_match.opponent_playing_field.getCellmatrix(attacs.x,attacs.y));
             } while (!r);
             o = false;
+            o = z;
+
+
+
         } else {
 
             boolean r;

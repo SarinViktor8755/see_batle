@@ -11,6 +11,10 @@ public class Coordinates {
         this.x = x;
     }
 
+    public void setY(byte y) {
+        this.y = y;
+    }
+
     public byte getY() {
         return y;
     }

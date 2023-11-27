@@ -263,7 +263,6 @@ public class Field {
     public boolean take_attac(int x, int y) {
         Cell c = field_matrix[x][y];
 
-
         if (c.getTip() == CELL_TYPE.OPEN_FREE) return false;
         if (c.getTip() == CELL_TYPE.OPEN_WOUND) return false;
         if (c.getTip() == CELL_TYPE.OPEN_DEATH) return false;
@@ -279,15 +278,6 @@ public class Field {
 
         }
 
-
-        //  System.ouret.println("adttac" + x);
-        // c.setTip(CELL_TYPE.OPEN_DEATH);
-
-//        for (int i = 0; i < shipArrayList.size(); i++) {
-//         //   field_matrix[shipArrayList.get(i).x][shipArrayList.get(i).y].setTip(CELL_TYPE.OPEN_DEATH);
-//            System.out.println(shipArrayList.get(i).x + "  " + shipArrayList.get(i).y);
-//        }
-//        System.out.println("+++++++++++++++++++");
         search_dead_ships();
         auto_completion_the_card();
 
