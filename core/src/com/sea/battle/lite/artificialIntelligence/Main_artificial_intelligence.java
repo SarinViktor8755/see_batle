@@ -32,7 +32,7 @@ public class Main_artificial_intelligence {
     }
 
     public Coordinates decide(Cell[][] field_matrix) {
-        decide(field_matrix, MathUtils.random(1f));
+        decide(field_matrix, MathUtils.random(.3f));
         return coordinat;
     }
 
@@ -44,9 +44,10 @@ public class Main_artificial_intelligence {
             return coordinat;
         }
         // алгоритм случайного удара
-        if (MathUtils.randomBoolean(chans)) setTargetStrike(CELL_TYPE.UNOPENED, field_matrix);
-        else setTargetStrike(CELL_TYPE.UNOPENED_OCCUPIED, field_matrix);
-         setRandomHit();
+        if (!MathUtils.randomBoolean(chans))
+       setTargetStrike(CELL_TYPE.UNOPENED, field_matrix);
+        else
+       setTargetStrike(CELL_TYPE.UNOPENED_OCCUPIED, field_matrix);
         return coordinat;
     }
 

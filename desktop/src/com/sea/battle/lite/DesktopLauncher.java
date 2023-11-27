@@ -8,7 +8,7 @@ import com.sea.battle.lite.MainGame;
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 			Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
-			config.setForegroundFPS(15);
+			config.setForegroundFPS(30);
 		config.setTitle("Sea_battle_lite");
 		new Lwjgl3Application(new MainGame(), config);
 	}
