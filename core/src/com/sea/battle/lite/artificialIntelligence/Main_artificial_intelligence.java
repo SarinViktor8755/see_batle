@@ -19,8 +19,7 @@ public class Main_artificial_intelligence {
     static byte RIGHT_SIDE = 1;
     static byte TOP_SIDE = 2;
     static byte BOTTOM_SIDE = 3;
-
-
+    
     public Main_artificial_intelligence() {
         this.coordinat = new Coordinates();
         coordinat.setXY((byte) MathUtils.random(0, 9), (byte) MathUtils.random(0, 9));
@@ -43,11 +42,9 @@ public class Main_artificial_intelligence {
             blowToWoundedShip(field_matrix);
             return coordinat;
         }
-
         // алгоритм случайного удара
         if (MathUtils.randomBoolean(chans)) setTargetStrike(CELL_TYPE.UNOPENED, field_matrix);
         else setTargetStrike(CELL_TYPE.UNOPENED_OCCUPIED, field_matrix);
-
         // setRandomHit();
         return coordinat;
     }
@@ -67,7 +64,6 @@ public class Main_artificial_intelligence {
                     r = true;
                 else r = false;
                 //   System.out.println(field_matrix[coordinat.getX()][coordinat.getY()].getTip());
-
             } while (!r);
 
         }
@@ -88,8 +84,6 @@ public class Main_artificial_intelligence {
 
     private void blowToWoundedShip(Cell[][] field_matrix) {  //метод добивания раненого
     //    System.out.println(typeOfNeighboringCell(LEFT_SIDE, (byte) 0, (byte) 0,field_matrix));
-
-
         boolean r;
         do {
             coordinat.setXY((byte) MathUtils.random(0, 9), (byte) MathUtils.random(0, 9));
@@ -97,9 +91,7 @@ public class Main_artificial_intelligence {
                 r = true;
             else r = false;
 
-
         } while (!r);
-
 
         System.out.println("------------------");
         System.out.println(typeOfNeighboringCell(LEFT_SIDE,coordinat.getX(), coordinat.getY(),field_matrix));
@@ -107,9 +99,6 @@ public class Main_artificial_intelligence {
         System.out.println(typeOfNeighboringCell(TOP_SIDE,coordinat.getX(), coordinat.getY(),field_matrix));
         System.out.println(typeOfNeighboringCell(BOTTOM_SIDE,coordinat.getX(), coordinat.getY(),field_matrix));
         System.out.println("------------------");
-
-        
-
 
 
 
@@ -119,15 +108,11 @@ public class Main_artificial_intelligence {
 
     private byte typeOfNeighboringCell(byte side, byte x , byte y, Cell[][] field_matrix) {
         try {
-
-
             if (side == LEFT_SIDE) return field_matrix[x][y - 1].getTip();
             if (side == RIGHT_SIDE) return field_matrix[x][y + 1].getTip();
             if (side == TOP_SIDE) return field_matrix[x + 1][y].getTip();
             if (side == BOTTOM_SIDE) return field_matrix[x - 1][y - 1].getTip();
         }catch (ArrayIndexOutOfBoundsException e ){return CELL_TYPE.AIOBE;}
-
-
         return field_matrix[x][y].getTip();
     }
 
