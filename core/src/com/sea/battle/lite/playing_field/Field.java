@@ -18,7 +18,7 @@ public class Field {
 
         // auto_ras();
         auto_ras();
-        print_playing_field();
+        //print_playing_field();
     }
 
     private void create_playing_field() {
@@ -178,6 +178,9 @@ public class Field {
         }
     }
 
+    public Cell[][] getField_matrix() {
+        return field_matrix;
+    }
 
     public boolean isFailure() { //проверка проиграл или нет
         int s = 0;
@@ -190,7 +193,7 @@ public class Field {
         }
 
         if (s == 20) {
-            print_playing_field();
+            //print_playing_field();
             return true;
         } else return false;
     }

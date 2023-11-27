@@ -9,7 +9,9 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Interpolation;
 import com.badlogic.gdx.math.MathUtils;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.ScreenUtils;
+import com.sea.battle.lite.artificialIntelligence.Main_artificial_intelligence;
 import com.sea.battle.lite.playing_field.CELL_TYPE;
 import com.sea.battle.lite.playing_field.Cell;
 import com.sea.battle.lite.playing_field.Field;
@@ -28,6 +30,8 @@ public class MainGame extends ApplicationAdapter {
     Texture death;
     BitmapFont font; //or use alex answer to use custom font
     private static int km, kop, pause;
+
+    Main_artificial_intelligence  mainArtificialIntelligence = new Main_artificial_intelligence();
 
     boolean o = true;
 
@@ -149,9 +153,9 @@ public class MainGame extends ApplicationAdapter {
         if (o) {
             boolean r;
             do {
-                r = game_match.opponent_playing_field.take_attac(MathUtils.random(0, 9), MathUtils.random(0, 9));
+                Coordinates attac = mainArtificialIntelligence.decide(game_match.opponent_playing_field.getField_matrix());
+                r = game_match.opponent_playing_field.take_attac(attac.x,attac.y);
             } while (!r);
-
             o = false;
         } else {
 
@@ -159,7 +163,6 @@ public class MainGame extends ApplicationAdapter {
             do {
                 r = game_match.player_playin_field.take_attac(MathUtils.random(0, 9), MathUtils.random(0, 9));
             } while (!r);
-
             o = true;
         }
 

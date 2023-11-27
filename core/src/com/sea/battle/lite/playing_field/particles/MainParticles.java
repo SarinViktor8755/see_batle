@@ -32,7 +32,7 @@ public class MainParticles {
         p.setPartical(MathUtils.random(260, 340), 300, CELL_TYPE.OPEN_DEATH);
         particls.add(p);
         particls.remove(particls.size() - 1);
-        System.out.println(particls);
+       // System.out.println(particls);
     }
 
     public void randerPartical(SpriteBatch spriteBatch, Texture texture) {
