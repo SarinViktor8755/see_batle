@@ -10,6 +10,9 @@ public class Field {
     private Cell[][] field_matrix;
     public static int size = 0;
 
+    public  int blows = 0;
+    public  int hits = 0;
+
     private ArrayList<Ship> shipArrayList;
 
     public Field() {
@@ -48,6 +51,9 @@ public class Field {
 
 
     public void auto_ras() {
+        blows = 0;
+        hits = 0;
+
         shipArrayList.clear();
         Field.size = 0;
         int iteration = 0;
@@ -267,19 +273,21 @@ public class Field {
         if (c.getTip() == CELL_TYPE.OPEN_WOUND) return false;
         if (c.getTip() == CELL_TYPE.OPEN_DEATH) return false;
 
-
+        blows++;
         if (c.getTip() == CELL_TYPE.UNOPENED) {
             c.setTip(CELL_TYPE.OPEN_FREE);
         }
 
         if (c.getTip() == CELL_TYPE.UNOPENED_OCCUPIED) {
             c.setTip(CELL_TYPE.OPEN_WOUND);
-
+            hits++;
 
         }
 
         search_dead_ships();
         auto_completion_the_card();
+
+        System.out.println(average_value());
 
         return true;
 
@@ -317,6 +325,14 @@ public class Field {
     }
 
 
+    public float average_value(){
+        try {
+            return (float)hits/ (float)blows;
+        }catch (ArithmeticException e){
+            return 0;
+        }
+
+    }
 }
 
 

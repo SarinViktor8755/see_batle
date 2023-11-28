@@ -4,7 +4,7 @@
             "outputFile": "com.sea.battle.lite.android-mergeDebugResources-12:/values-is/values-is.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\vik\\.gradle\\caches\\transforms-3\\d63c99952dd814cb712dbec7fd24562c\\transformed\\core-1.8.0\\res\\values-is\\values-is.xml",
+                    "source": "C:\\Users\\vit\\.gradle\\caches\\transforms-3\\d63c99952dd814cb712dbec7fd24562c\\transformed\\core-1.8.0\\res\\values-is\\values-is.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

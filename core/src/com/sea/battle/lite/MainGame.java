@@ -155,7 +155,7 @@ public class MainGame extends ApplicationAdapter {
         if (o) {
             boolean r;
             do {
-                Coordinates attacs = mainArtificialIntelligence.decide(game_match.opponent_playing_field.getField_matrix());
+                Coordinates attacs = mainArtificialIntelligence.decide(game_match.opponent_playing_field.getField_matrix(),game_match.player_playin_field.average_value()/5);
                 r = game_match.opponent_playing_field.take_attac(attacs.x,attacs.y);
                 z = CELL_TYPE.isOCCUPIED(game_match.opponent_playing_field.getCellmatrix(attacs.x,attacs.y));
             } while (!r);
