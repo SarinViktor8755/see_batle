@@ -55,7 +55,11 @@ public class MainGame extends ApplicationAdapter {
 
 
         game_match.mainParticles.movedParticles();
-        if(MathUtils.randomBoolean(.04f))game_match.mainParticles.addPartical(40,40,CELL_TYPE.OPEN_DEATH);
+      //  if(MathUtils.randomBoolean(.04f))
+
+
+
+            //game_match.mainParticles.addPartical(40,40,CELL_TYPE.OPEN_DEATH);
 
 
         // game_match.player_playin_field.auto_completion_the_card();
@@ -137,7 +141,7 @@ public class MainGame extends ApplicationAdapter {
         }
 
         batch.setColor(1, 1, 1, 1);
-        game_match.mainParticles.randerPartical(batch,texture);
+        game_match.mainParticles.randerPartical(batch,death);
         font.draw(batch, "SCORE :: " + km + " : " + kop, 200, 400);
         batch.end();
 
@@ -155,9 +159,17 @@ public class MainGame extends ApplicationAdapter {
         if (o) {
             boolean r;
             do {
+
                 Coordinates attacs = mainArtificialIntelligence.decide(game_match.opponent_playing_field.getField_matrix(),game_match.player_playin_field.average_value()/5);
                 r = game_match.opponent_playing_field.take_attac(attacs.x,attacs.y);
+
+                for (int j = 0; j < 3; j++) {
+                    game_match.mainParticles.addPartical(400,400,CELL_TYPE.OPEN_DEATH);
+                }
+
+
                 z = CELL_TYPE.isOCCUPIED(game_match.opponent_playing_field.getCellmatrix(attacs.x,attacs.y));
+
             } while (!r);
             o = false;
             o = z;

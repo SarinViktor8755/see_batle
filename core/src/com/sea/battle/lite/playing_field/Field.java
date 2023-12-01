@@ -280,6 +280,7 @@ public class Field {
 
         if (c.getTip() == CELL_TYPE.UNOPENED_OCCUPIED) {
             c.setTip(CELL_TYPE.OPEN_WOUND);
+
             hits++;
 
         }

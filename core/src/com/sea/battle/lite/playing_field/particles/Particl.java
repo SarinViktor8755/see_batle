@@ -16,19 +16,22 @@ public class Particl {
     public Particl() {
         this.position = new Vector2();
         this.velocity = new Vector2(0,5);
-        this.gravity = new Vector2(0,-1);
+        this.gravity = new Vector2(0,-10);
+        this.delta = -1;
     }
 
     public void move() {
-        velocity.add(gravity);
-        position.add(velocity.scl(gravity));
-        delta -= Gdx.graphics.getBackBufferHeight();
+
+        position.add(velocity.cpy().scl(Gdx.graphics.getDeltaTime()));
+        velocity.add(gravity.cpy().scl(Gdx.graphics.getDeltaTime()));
+        delta = delta - Gdx.graphics.getDeltaTime();
     }
 
     public void setPartical(float xp, float yp, byte tip) {
         this.position.set(xp, yp);
-        this.gravity.set(0, -0.00001f);
-        this.delta = MathUtils.random(0, .7f);
+        this.gravity.set(0, -4500f/2);
+        this.delta = MathUtils.random(.2f,.7f);
+        this.velocity = new Vector2(MathUtils.random(-250,250),MathUtils.random(100,350));
     }
 
     public Vector2 getPosition() {
@@ -37,6 +40,10 @@ public class Particl {
 
     public void setPosition(Vector2 position) {
         this.position = position;
+    }
+
+    public void setPosition(float x, float y) {
+        this.position.set(x,y);
     }
 
     public Vector2 getVelocity() {
@@ -63,6 +70,11 @@ public class Particl {
         this.delta = delta;
     }
 
+
+    public boolean isLive(){
+        if(delta > 0) return true;
+        return false;
+    }
     @Override
     public String toString() {
         return "Particl{" +
